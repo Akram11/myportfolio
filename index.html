@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css" rel="stylesheet" type="text/css">
   <title>My awesome portfolio</title>
@@ -14,18 +15,21 @@
 
 
     <header class="header">
-      <div class="header-inner">
-        <img class="header-logo" src="./pictures/logo.jpeg" alt="Akram's Logo">
-        <h1 class="header-title">Akram Alfawakheeri<br><span>Front-end Ninja</span></h1>
+      <div class="header-logo">
+        <img class="logo-img" src="./pictures/logo.jpeg" alt="Akram's Logo">
+      </div>
+      <div class="header-text">
+        <h1 class="header-title">Akram Alfawakheeri</h1>
+        <p>Front-end Ninja</p>
       </div>
     </header>
 
 
     <nav class="nav">
       <ul class="nav-list">
-        <li class="nav-item"><a href="#"></a>my projects</li>
-        <li class="nav-item"><a href="#"></a>about me</li>
-        <li class="nav-item"><a href="#"></a>contact</li>
+        <li class="nav-item"><a href="#about-me">about me</a></li>
+        <li class="nav-item"><a href="#projects">projects</a></li>
+        <li class="nav-item"><a href="#footer">contact</a></li>
       </ul>
     </nav>
 
@@ -33,27 +37,35 @@
       <div class="hero">
         <img class="hero-img" src="./pictures/hero1.jpg" alt="hero-image">
       </div>
-      <section class="featured-work">
-        <h2 class="title">featured Work</h2>
+      <section id="projects" class="featured-work">
+        <h2 class="section-title">Featured Work</h2>
         <div class="projects">
           <div class="project">
-            <img src="./picturess/memo-game22.png" alt="">
+            <img src="./pictures/memo-game11.jpeg" alt="">
             <h2>Memory Game</h2>
           </div>
           <div class="project">
-            <img src="./pictures/saracade-game.jpeg" alt="">
+            <img src="./pictures/aracade-game.jpeg" alt="">
             <h2>Classic Arcade Game</h2>
           </div>
           <div class="project">
-            <img src="./pictures/sreview-app.jpeg" alt="">
+            <img src="./pictures/review-app.jpeg" alt="">
             <h2>Restaurant Reviews App</h2>
           </div>
         </div>
       </section>
+
+      <section id="about-me" class="about-me">
+        <h2 class="section-title">About me</h2>
+        <p>I have a clear, logical mind with a practical approach to problem solving and a drive to see things through to completion. I have a great eye for detail. I am eager to learn, I enjoy overcoming challenges, and I have a genuine interest in
+          Business developement and leveraging technology for social good.</p>
+      </section>
     </main>
 
-    <footer>
-      this is footer
+    <footer id="footer">
+      <i class="fab fa-github-square"><a href="#"></a> </i>
+      <i class="fab fa-linkedin"><a href="#"></a> </i>
+      <i class="fab fa-google"><a href="#"></a> </i>
     </footer>
   </div>
 </body>

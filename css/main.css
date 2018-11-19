@@ -1,11 +1,10 @@
-*, *::before, *::after{
+*, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-
-img{
+img {
   max-width: 100%;
   height: auto;
 }
@@ -20,44 +19,29 @@ h1, h2, h3, h4, h5 {
 }
 
 /*--------HEADER-START---------*/
-header {
+.header {
   width: 100%;
+  text-align: center;
   background-color: #d4d2d2;
   border-bottom: 3px solid #02b3e4;
-  /* box-shadow: 0 2px 5px #02b3e4; */
-  margin: 0;
 }
 
-.header-inner {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.header-logo {
+.logo-img {
   max-height: 100px;
   border: 3px solid white;
   border-radius: 50%;
-  margin: 10px 10px;
-
+  margin: 10px;
 }
 
-.header-title {
-  display: inline-block;
-  margin: 10px 10px;
-  vertical-align: top;
+.header p {
+  margin-bottom: 10px;
 }
-
-.header-title span{
-  font-weight: 50;
-}
-
 
 /*--------HEADER-END---------*/
 /*--------NAV-START---------*/
 .nav {
   width: 100%;
-  font-size:0.5em;
+  font-size: 0.8em;
   background-color: #white;
 }
 
@@ -73,26 +57,100 @@ header {
   text-transform: uppercase;
 }
 
-/*--------NAV-END---------*/
-.hero {
-  height: 400px;
+.nav-item a {
+  font-size: 1em;
+  text-decoration: none;
+  font-weight: 900;
+  color: #7d97ad;
 }
 
-.hero-img {
+/*--------NAV-END---------*/
+/*---MAIN-CONTENT-START---*/
+.section-title {
+  font-size: 2em;
+  color: #02b3e4;
+  margin: 15px 0;
+}
 
-  height: 100%;
+.featured-work, .about-me {
+  text-align: center;
 }
 
 .projects {
   width: 100%;
-  display: flex;
-  background-color: blue;
+  /* display: flex;
+  background-color: blue; */
   justify-content: space-between;
 }
 
 .project {
-  width: 33%;
-  background-color: gray;
+  /* width: 33%; */
+  margin: 25px 15px;
+}
+
+.project h2 {
+  font-size: 1.2em;
+  color: #2d3c49
+}
+
+.about-me p {
+  margin: 10px 40px;
+  font-size: 5vw;
+}
+
+
+
+/*---MAIN-CONTENT-END---*/
+
+/*--------FOOTER---------*/
+footer {
+  border-top: 1px solid #02b3e4;
+  text-align: center;
+  margin: 20px;
+}
+
+.fab {
+  margin: 15px;
+  color: #02b3e4;
+  font-size: 25px;
+}
+
+/*--------media queries---------*/
+
+@media screen and (min-width: 700px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    padding: 10px;
+  }
+
+  .header-text {
+    padding: 25px 15px 0 0;
+    text-align: right;
+  }
+
+
+  .projects {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hero-img{
+    width: 100%;
+    height: 500px;
+  }
+
+  .about-me p {
+    font-size: 3vw;
+  }
+
+  .fab {
+    margin: 15px 20px;
+    color: #02b3e4;
+    font-size: 40px;
+  }
+
 }
 
 @media screen and (min-width: 1000px) {
@@ -100,5 +158,9 @@ header {
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .about-me p {
+    font-size: 25px;
   }
 }
