@@ -1,3 +1,4 @@
+/* Normalize and glocal CSS */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -18,6 +19,15 @@ h1, h2, h3, h4, h5 {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #02b3e4;
+}
+
 /*--------HEADER-START---------*/
 .header {
   width: 100%;
@@ -35,6 +45,7 @@ h1, h2, h3, h4, h5 {
 
 .header p {
   margin-bottom: 10px;
+  font-size: 22px;
 }
 
 /*--------HEADER-END---------*/
@@ -59,8 +70,7 @@ h1, h2, h3, h4, h5 {
 
 .nav-item a {
   font-size: 1em;
-  text-decoration: none;
-  font-weight: 900;
+  font-weight: 700;
   color: #7d97ad;
 }
 
@@ -98,10 +108,7 @@ h1, h2, h3, h4, h5 {
   font-size: 5vw;
 }
 
-
-
 /*---MAIN-CONTENT-END---*/
-
 /*--------FOOTER---------*/
 footer {
   border-top: 1px solid #02b3e4;
@@ -109,14 +116,13 @@ footer {
   margin: 20px;
 }
 
-.fab {
+.fab, .fas {
   margin: 15px;
   color: #02b3e4;
   font-size: 25px;
 }
 
 /*--------media queries---------*/
-
 @media screen and (min-width: 700px) {
   .header {
     display: flex;
@@ -130,13 +136,12 @@ footer {
     text-align: right;
   }
 
-
   .projects {
     display: flex;
     justify-content: space-between;
   }
 
-  .hero-img{
+  .hero-img {
     width: 100%;
     height: 500px;
   }
@@ -145,12 +150,11 @@ footer {
     font-size: 3vw;
   }
 
-  .fab {
+  .fab, .fas {
     margin: 15px 20px;
     color: #02b3e4;
     font-size: 40px;
   }
-
 }
 
 @media screen and (min-width: 1000px) {
@@ -158,9 +162,11 @@ footer {
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
   }
 
   .about-me p {
-    font-size: 25px;
+    font-size: 24px;
+    padding: 0 100px;
   }
 }
